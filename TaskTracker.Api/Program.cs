@@ -7,6 +7,11 @@ using TaskTracker.Api.Repositories.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+ConfigureServices(builder.Services);
+
+
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -46,3 +51,9 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+void ConfigureServices(IServiceCollection services)
+{
+    
+}

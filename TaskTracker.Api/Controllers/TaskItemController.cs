@@ -46,11 +46,13 @@ namespace TaskTracker.Api.Controllers
                 else
                 {
                     return Ok(taskItems);
+
                 }
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ERROR_MESSAGE);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    ERROR_MESSAGE);
             }
         }
 
@@ -71,7 +73,8 @@ namespace TaskTracker.Api.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ERROR_MESSAGE);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    ERROR_MESSAGE);
             }
         }
 
@@ -94,7 +97,8 @@ namespace TaskTracker.Api.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ERROR_MESSAGE);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    ERROR_MESSAGE);
             }
 
 
@@ -110,7 +114,8 @@ namespace TaskTracker.Api.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ERROR_MESSAGE);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    ERROR_MESSAGE);
             }
         }
 
